@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+  head
+    title Encryption
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+
+  body
+    form(style='width: 500px; height: 500px; margin:0 auto; margin-top: 100px; border : 1px solid black; padding : 20px;', method='post', action='/Encryption')
+      h2(style="margin: 0 auto; margin-bottom:20px;") FORM
+      .form-group(style="margin: 100px;")
+        label(for='InputString') STRING
+        input#exampleInputString.form-control(type='text', name="string", placeholder='평문을 입력하세요')
+      button.btn.btn-primary(type='submit' style="width: 300px; position:absolute; left: 50%; transform: translateX(-50%);") Login

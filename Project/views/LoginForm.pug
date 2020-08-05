@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    title Login
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    
+  body
+    form(style='width: 500px; height: 500px; margin:0 auto; margin-top: 100px; border : 1px solid black; padding : 20px;', method="post", action="/Login")
+      h2(style="margin: 0 auto; margin-bottom:20px;") FORM
+      .form-group
+        label(for='InputID') ID
+        input#exampleInputId1.form-control(type='text', 로그인하기='', placeholder='ID' name="ID") 
+      .form-group
+        label(for='InputPassword1') Password
+        input#exampleInputPassword1.form-control(type='password', name='PW', placeholder='Password')
+      button.btn.btn-primary(type='submit') Login
